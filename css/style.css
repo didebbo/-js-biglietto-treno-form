@@ -1,24 +1,26 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: monospace; background-color: #CCCCCC; font-size: 3vh; }
+body { font-family: monospace; background-color: #CCCCCC; font-size: 3vmin; }
 
 body input, body select, body button { font-size: 0.8em; }
 
 body::-webkit-scrollbar { display: none; }
 
-body .container { width: 90.90909%; margin: 1em auto; }
+body .container { width: 90.90909%; margin: 1em auto; overflow: hidden; }
 
-body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 1em; }
+body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body .container .content-header .title { display: -webkit-box; display: -ms-flexbox; display: flex; color: white; }
+body .container .content-header .title { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: white; }
 
-body .container .content-header .title h1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+body .container .content-header .title h1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 1em; }
 
 body .container .content-header .title h1::before, body .container .content-header .title h1::after { content: "CiuF"; }
 
 body .container .content-header .title h1 > * { margin: 0 0.2em; }
 
 body .container .content-header .title h1 i { background-color: #E31936; padding: 0.5em; border-radius: 100%; }
+
+body .container .content-header .title h2 { position: absolute; bottom: 0.2em; }
 
 body .container .content-input-card { background-color: white; padding: 2em; }
 
@@ -71,3 +73,6 @@ body .container .content-output-card .row .carrozza { -ms-grid-row: 2; -ms-grid-
 body .container .content-output-card .row .id { -ms-grid-row: 2; -ms-grid-column: 4; grid-area: id; }
 
 body .container .content-output-card .row .costo { -ms-grid-row: 2; -ms-grid-column: 5; grid-area: costo; }
+
+@media (orientation: portrait) { body .container .content-input-card .row { grid-template-areas: "name" "km" "eta" "controlls"; -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
+  body .container .content-output-card .row { grid-template-areas: "title" "passeggero"  "offerta" "carrozza" "id" "costo"; -ms-grid-columns: 1fr; grid-template-columns: 1fr; text-align: center; } }
