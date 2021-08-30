@@ -48,7 +48,9 @@ body .container .content-input-card .row > li input:focus::placeholder, body .co
 
 body .container .content-input-card .row > li button { padding: 0.5em 1em; }
 
-body .container .content-output-card { background-color: white; padding: 2em; margin: 1em 0; }
+body .container .content-output-card { display: none; background-color: white; padding: 2em; margin: 1em 0; }
+
+body .container .content-output-card.show { display: block; }
 
 body .container .content-output-card .row { list-style: none; display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[5]; grid-template-columns: repeat(5, 1fr); grid-template-areas: "title title . . ." "passeggero offerta carrozza id costo"; }
 
@@ -58,7 +60,7 @@ body .container .content-output-card .row > li:not(.title) > * { padding: 0.2em 
 
 body .container .content-output-card .row .title { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: title; padding: 1em 0; text-transform: uppercase; }
 
-body .container .content-output-card .row .passeggero { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: passeggero; }
+body .container .content-output-card .row .passeggero { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: passeggero; text-transform: capitalize; }
 
 body .container .content-output-card .row .offerta { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: offerta; }
 
