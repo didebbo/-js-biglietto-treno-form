@@ -2,7 +2,9 @@
 
 body { font-size: 3vh; font-family: monospace; background-color: #CCCCCC; }
 
-body .container { width: 90.90909%; margin: 2em auto; }
+body::-webkit-scrollbar { display: none; }
+
+body .container { width: 90.90909%; margin: 1em auto; }
 
 body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 1em; }
 
@@ -45,3 +47,23 @@ body .container .content-input-card .row > li input:focus::-ms-input-placeholder
 body .container .content-input-card .row > li input:focus::placeholder, body .container .content-input-card .row > li select:focus::placeholder { color: transparent; }
 
 body .container .content-input-card .row > li button { padding: 0.5em 1em; }
+
+body .container .content-output-card { background-color: white; padding: 2em; margin: 1em 0; }
+
+body .container .content-output-card .row { list-style: none; display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[5]; grid-template-columns: repeat(5, 1fr); grid-template-areas: "title title . . ." "passeggero offerta carrozza id costo"; }
+
+body .container .content-output-card .row > li:not(.title) { text-align: center; }
+
+body .container .content-output-card .row > li:not(.title) > * { padding: 0.2em 0; }
+
+body .container .content-output-card .row .title { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: title; padding: 1em 0; text-transform: uppercase; }
+
+body .container .content-output-card .row .passeggero { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: passeggero; }
+
+body .container .content-output-card .row .offerta { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: offerta; }
+
+body .container .content-output-card .row .carrozza { -ms-grid-row: 2; -ms-grid-column: 3; grid-area: carrozza; }
+
+body .container .content-output-card .row .id { -ms-grid-row: 2; -ms-grid-column: 4; grid-area: id; }
+
+body .container .content-output-card .row .costo { -ms-grid-row: 2; -ms-grid-column: 5; grid-area: costo; }
