@@ -16,6 +16,8 @@
 <body>
 
     <div class="container">
+
+        <!-- HEADER -->
         <div class="content-header">
             <div class="title">
                 <h1>
@@ -23,6 +25,39 @@
                 </h1>
             </div>
         </div>
+        <!-- /HEAD -->
+
+        <!-- INPUT CARD -->
+        <div class="content-input-card">
+            <ul class="row">
+                <li class="name">
+                    <p> Nome e Cognome</p>
+                    <input type="text" name="name" id="name" placeholder="Inserisci il tuo nome">
+                </li>
+                <li class="km">
+                    <p>Km da percorrere</p>
+                    <input type="number" name="km" id="km" placeholder="Km da percorrere">
+                </li>
+                <li class="eta">
+                    <p>Fascia d'età</p>
+                    <select name="eta" id="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </li>
+                <li class="controlls">
+                    <button>
+                        Genera
+                    </button>
+                    <button>
+                        Annulla
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- /INPUT CARD -->
+
     </div>
 
     <script src="js/index.js"></script>

@@ -2,7 +2,7 @@
 
 body { font-size: 3vh; font-family: monospace; background-color: #CCCCCC; }
 
-body .container { border: 0.2em solid red; width: 90.90909%; margin: 2em auto; }
+body .container { width: 90.90909%; margin: 2em auto; }
 
 body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 1em; }
 
@@ -15,3 +15,33 @@ body .container .content-header .title h1::before, body .container .content-head
 body .container .content-header .title h1 > * { margin: 0 0.2em; }
 
 body .container .content-header .title h1 i { background-color: #E31936; padding: 0.5em; border-radius: 100%; }
+
+body .container .content-input-card { background-color: white; padding: 2em; }
+
+body .container .content-input-card .row { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); grid-template-areas: "name km eta" ". controlls ."; gap: 2em; list-style-type: none; }
+
+body .container .content-input-card .row > li { text-align: center; }
+
+body .container .content-input-card .row > li > * { margin: 0.5em 0; }
+
+body .container .content-input-card .row > li.name { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: name; }
+
+body .container .content-input-card .row > li.km { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: km; }
+
+body .container .content-input-card .row > li.eta { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: eta; }
+
+body .container .content-input-card .row > li.controlls { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: controlls; }
+
+body .container .content-input-card .row > li input, body .container .content-input-card .row > li select { padding: 0.5em; text-align: center; }
+
+body .container .content-input-card .row > li input::-webkit-outer-spin-button, body .container .content-input-card .row > li input::-webkit-inner-spin-button, body .container .content-input-card .row > li input input[type=number], body .container .content-input-card .row > li select::-webkit-outer-spin-button, body .container .content-input-card .row > li select::-webkit-inner-spin-button, body .container .content-input-card .row > li select input[type=number] { -webkit-appearance: none; margin: 0; -moz-appearance: textfield; }
+
+body .container .content-input-card .row > li input:focus::-webkit-input-placeholder, body .container .content-input-card .row > li select:focus::-webkit-input-placeholder { color: transparent; }
+
+body .container .content-input-card .row > li input:focus:-ms-input-placeholder, body .container .content-input-card .row > li select:focus:-ms-input-placeholder { color: transparent; }
+
+body .container .content-input-card .row > li input:focus::-ms-input-placeholder, body .container .content-input-card .row > li select:focus::-ms-input-placeholder { color: transparent; }
+
+body .container .content-input-card .row > li input:focus::placeholder, body .container .content-input-card .row > li select:focus::placeholder { color: transparent; }
+
+body .container .content-input-card .row > li button { padding: 0.5em 1em; }
