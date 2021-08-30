@@ -1,1 +1,17 @@
-body::before { content: "init"; }
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-size: 3vh; font-family: monospace; background-color: #CCCCCC; }
+
+body .container { border: 0.2em solid red; width: 90.90909%; margin: 2em auto; }
+
+body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 1em; }
+
+body .container .content-header .title { display: -webkit-box; display: -ms-flexbox; display: flex; color: white; }
+
+body .container .content-header .title h1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+body .container .content-header .title h1::before, body .container .content-header .title h1::after { content: "CiuF"; }
+
+body .container .content-header .title h1 > * { margin: 0 0.2em; }
+
+body .container .content-header .title h1 i { background-color: #E31936; padding: 0.5em; border-radius: 100%; }
