@@ -22,7 +22,7 @@ const scontoOver = 40;
 
 dom_btn_show.onclick = () => {
 
-    let name = dom_input_name.value;
+    let name = dom_input_name.value.toLowerCase();
     let km = parseInt(dom_input_km.value);
     let eta = dom_input_eta.value;
     let costoTotale = 0;

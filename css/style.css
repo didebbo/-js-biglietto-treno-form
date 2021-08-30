@@ -1,6 +1,8 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-size: 3vh; font-family: monospace; background-color: #CCCCCC; }
+body { font-family: monospace; background-color: #CCCCCC; font-size: 3vh; }
+
+body input, body select, body button { font-size: 0.8em; }
 
 body::-webkit-scrollbar { display: none; }
 
