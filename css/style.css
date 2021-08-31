@@ -8,17 +8,19 @@ body::-webkit-scrollbar { display: none; }
 
 body .container { width: 90.90909%; margin: 1em auto; overflow: hidden; }
 
-body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body .container .content-header { background-color: #006C67; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 1em; }
 
 body .container .content-header .title { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: white; }
 
-body .container .content-header .title h1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 1em; }
+body .container .content-header .title h1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 body .container .content-header .title h1::before, body .container .content-header .title h1::after { content: "CiuF"; }
 
 body .container .content-header .title h1 > * { margin: 0 0.2em; }
 
-body .container .content-header .title h1 i { background-color: #E31936; padding: 0.5em; border-radius: 100%; }
+body .container .content-header .title h1 i { position: relative; background-color: #E31936; padding: 0.5em; border-radius: 100%; }
+
+body .container .content-header .title h1 i::after { position: absolute; content: "2.0"; font-family: monospace; font-size: 0.8em; bottom: 0; left: 50%; -webkit-transform: translate(-50%, 50%); transform: translate(-50%, 50%); }
 
 body .container .content-header .title h2 { position: absolute; bottom: 0.2em; }
 
