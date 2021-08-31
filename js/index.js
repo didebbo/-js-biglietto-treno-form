@@ -31,7 +31,7 @@ dom_btn_show.onclick = () => {
     if (isNaN(km) || km <= 0) return;
 
     dom_output_name.innerHTML = name;
-    dom_output_carrozza.innerHTML = Math.floor(Math.random() * 10000) + 10000;
+    dom_output_carrozza.innerHTML = Math.floor(Math.random() * 20) + 1;
     dom_output_id.innerHTML = Math.floor(Math.random() * 10000) + 10000;
 
     costoTotale = costoKm * km;
